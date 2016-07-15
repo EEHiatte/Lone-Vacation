@@ -1,0 +1,29 @@
+Sound Effects
+
+player feeding fire - 			FireWoosh.wav
+player building traps -			HammerWood.wav
+player eating - 			HumanEating DM009_39.wav
+player drinking - 			
+player being hurt - 			Grunt.wav
+Player hides in a bush - 		Hide in bush.wav
+Player hides behind rock -		
+Player hides in tree - 			
+Player out of stamina - 		
+Player inventory full - 		
+
+CLicking menu button - 			MenuButtonSFX.wav
+Cannibals hURT (male) - 		Senior-Male-A_Ow_VKT_13500.wav
+cannibal hurt (female) - 		
+
+
+
+
+Music
+
+Divinity Original Sin OST - 05 Bittersweet Regrets
+
+
+
+
+
+Ambient

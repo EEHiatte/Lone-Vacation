@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &119006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 420568}
+  - 114: {fileID: 11458276}
+  - 114: {fileID: 11429404}
+  - 114: {fileID: 11464090}
+  - 114: {fileID: 11441264}
+  - 114: {fileID: 11431618}
+  - 114: {fileID: 11447774}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &137784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 433034}
+  - 114: {fileID: 11449914}
+  m_Layer: 0
+  m_Name: PauseState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420568
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 433034}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &433034
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137784}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 420568}
+  m_RootOrder: 0
+--- !u!114 &11429404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3a878503f6f8a49ab388395ea4b8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  stockpiles: []
+  cthulhuStatuePieces: []
+  tikiStatuePieces: []
+  tikiTorchPieces: []
+  resortBarPieces: []
+  surfboardPieces: []
+  stoneheadPieces: []
+--- !u!114 &11431618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260114eca429fc845ab4d7f1f8176853, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11441264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ebf4a1ef2564d548a9cab4eb9a2c31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gmDays: {fileID: 11458276}
+  m_wbWeather: {fileID: 11431618}
+  m_nCurrWeather: 0
+  Wind: {fileID: 0}
+  Rain: {fileID: 0}
+--- !u!114 &11447774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4a1f458debd8e4488b17d319ab6281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tikiTorch: {fileID: 0}
+  tikiTorchToCollect: 0
+  tikiStatue: {fileID: 0}
+  tikiStatueToCollect: 0
+  cthulhuStatue: {fileID: 0}
+  cthulhuStatueToCollect: 0
+  stonehead: {fileID: 0}
+  stoneheadToCollect: 0
+  islandBar: {fileID: 0}
+  islandBarToCollect: 0
+  surfboard: {fileID: 0}
+  surfboardToCollect: 0
+--- !u!114 &11449914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a700553267017824a8e53ca242fa5ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 0}
+--- !u!114 &11458276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1d6e33108b67343bb7899105000100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 136148, guid: 01fcac33b7dd5fc4f95546c0c48ab2d0, type: 2}
+  currentTime: 0
+  currentDay: 0
+  fire: {fileID: 0}
+  player: {fileID: 0}
+  sun: {fileID: 0}
+  moon: {fileID: 0}
+  CannibalHut: {fileID: 162178, guid: 6d35b2c0bc8c8d045b43f4674017645d, type: 2}
+  AnimalNest: {fileID: 162178, guid: 5fd563035dae67f4d81d5940b3d854e0, type: 2}
+  birds: {fileID: 0}
+  crickets: {fileID: 0}
+--- !u!114 &11464090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d9e3c9373bddb4c8c7135e15cc9406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 119006}
+  m_IsPrefabParent: 1
